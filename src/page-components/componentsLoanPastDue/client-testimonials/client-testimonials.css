@@ -1,0 +1,132 @@
+.container-client,.client-testimonials__container {
+    width:65%;
+    padding-bottom: 4rem;
+}
+
+.client__avatar-client {
+   
+   
+ background-color: pink;
+ width:30rem;
+    
+    /*border:0.4rem solid var(--color-primary-variant);*/
+}
+
+.client__avatar-client img {
+    
+  
+   width:10rem;
+   height:10rem;
+    border-radius:50%;
+}
+
+.client-testimonial-welcome {
+    
+    background:/*var(--color-white)*/#e5f4fe;
+
+    text-align:left;
+    user-select:none; /*new feature unlocked! it is for if you dont want them to select or highlight the text*/
+    padding:2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    
+    color:black;
+    border-top-left-radius:0rem;
+    border-bottom-right-radius:0rem;
+    
+    border-radius:2rem;
+
+    box-shadow:inset 0px 0 15px 20px rgba(255, 255, 255, 1);
+    -webkit-box-shadow:inset 0px 0 15px 20px rgba(255, 255, 255, 1);
+    -moz-box-shadow:inset 0px 0 15px 20px rgba(255, 255, 255, 1);
+    
+    position:relative;
+}
+
+
+.client-testimonial-welcome img{
+    width:17rem;
+    height:16rem;
+     border-radius:50%;
+     flex:1.2;
+     position: relative;
+     top:-1rem;
+}
+
+.client-testimonial-welcome p{
+font-size: 1.2rem;
+line-height: 1.7;
+padding-left: 2rem;
+min-width: 60%;
+ flex:1;
+
+}
+
+
+
+.client-testimonial-welcome h6{
+    padding-left: 2rem;
+    font-size: 1.3rem;
+    position: relative;
+    top:-3rem;
+}
+
+
+
+
+.client__review {
+    /*color:var(--color-light);*/
+    font-weight:300;
+    font-size: 1.1rem;
+    display:block;
+    width: 80%
+    /*margin:0.8rem auto 0;*/
+}
+
+.client__name {
+    font-size: 1.3rem;
+   
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/*new tip, if you install a react package , you can inspect it in the browser to find the class/className it's actually using  */
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    background: var(--color-primary);
+}
+
+
+/* =================== MEDIA QUERIES (MEDIUM DEVICES) ================ */
+
+@media screen and (max-width:1024px) {
+   .container.client-client-testimonials__container{
+    width:60%;
+   }
+ }
+ 
+ 
+ /* ================= MEDIA QUERIES (SMALL DEVICES) ==================== */
+ @media screen and (max-width:600px) {
+ 
+    .container.client-client-testimonials__container{
+        width:var(--container-width-sm);
+       }
+
+
+       .client__name {
+       
+        margin-top:0px;
+       
+    }
+
+    .client__review {
+        width:var(--container-width-sm);
+    }   
+ 
+ }
+  

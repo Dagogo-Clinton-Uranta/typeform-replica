@@ -1,0 +1,95 @@
+.container.testimonials__container {
+    width:60%;
+    padding-bottom: 4rem;
+}
+
+.client__avatar {
+    width:100%;
+    aspect-ratio:1/1;
+    overflow:hidden;
+    border-radius:0%;
+    margin:0 auto 1rem;
+    /*border:0.4rem solid var(--color-primary-variant);*/
+}
+
+.testimonial-welcome {
+height: 22rem;
+    
+    background:/*var(--color-white)*/#111111;
+
+    text-align:center;
+    user-select:none; /*new feature unlocked! it is for if you dont want them to select or highlight the text*/
+    padding:2rem;
+    
+    color:white;
+    border-top-left-radius:3rem;
+    border-bottom-right-radius:3rem;
+    
+
+    /*box-shadow: var(--feature-shadow);
+    -webkit-box-shadow: var(--feature-shadow);
+    -moz-box-shadow: var(--feature-shadow);*/
+    
+    
+}
+
+.testimonial-welcome p{
+font-size: 1.25rem;
+line-height: 1.7;
+height:10rem;
+}
+
+
+
+
+.client__review {
+    /*color:var(--color-light);*/
+    font-weight:300;
+    font-size: 1.1rem;
+    display:block;
+    width: 80%
+    /*margin:0.8rem auto 0;*/
+}
+
+.client__name {
+    font-size: 1.3rem;
+    margin-top:-50px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/*new tip, if you install a react package , you can inspect it in the browser to find the class/className it's actually using  */
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    background: var(--color-primary);
+}
+
+
+/* =================== MEDIA QUERIES (MEDIUM DEVICES) ================ */
+
+@media screen and (max-width:1024px) {
+   .container.testimonials__container{
+    width:60%;
+   }
+ }
+ 
+ 
+ /* ================= MEDIA QUERIES (SMALL DEVICES) ==================== */
+ @media screen and (max-width:600px) {
+ 
+    .container.testimonials__container{
+        width:var(--container-width-sm);
+       }
+
+
+       .client__name {
+       
+        margin-top:0px;
+       
+    }
+
+    .client__review {
+        width:var(--container-width-sm);
+    }   
+ 
+ }
+  

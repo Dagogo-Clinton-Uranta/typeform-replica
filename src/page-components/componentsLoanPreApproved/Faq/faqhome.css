@@ -1,0 +1,160 @@
+#faqhome {
+
+    margin-bottom: 7rem;
+
+}
+
+.faqhome__container {
+    display:grid;
+    grid-template-columns: 1fr ;
+    gap:1.5rem;
+    
+}
+
+/*.faqhome__container  > div {
+  background: var(--color-bg-white);
+  padding:2.4rem 5rem;
+  
+  border:  var(--separator-line);
+  transition:var(--transition);
+ 
+  box-shadow: var(--feature-shadow);
+-webkit-box-shadow: var(--feature-shadow);
+-moz-box-shadow: var(--feature-shadow);
+}*/
+
+
+.faqhome__container  > div:hover {
+    background: transparent;
+   /* border-color:var(--color-primary-variant);*/
+    
+    cursor:default;
+}
+
+
+
+
+.faqhome__container > div h3 {
+  text-align:center;
+  margin-bottom: 2rem;
+  color:var(--color-primary);
+}
+
+
+.faqhome__content {
+   display:grid;
+   grid-template-columns: 1fr 1fr;
+   row-gap:2rem;
+}
+
+.faqhome__details {
+    display:flex;
+    gap:1rem;
+
+}
+
+.faqhome__details-icon {
+    margin-top: 6px;
+    color:var(--color-primary);
+
+}
+
+
+.btn-pos {
+   margin-top: 5%;
+}
+
+
+
+.selected__accent {
+    
+        background-color:blue;
+        width:1px;
+        height:23px;
+        position:absolute;
+        top:27%;
+        left:0%;
+        z-index:20;
+           
+}
+
+
+.faqhome__item {
+    background-color: #F9F5F2 !important;
+     /*margin-top: -8rem;*/
+ 
+}
+
+
+
+/*============== MEDIA QUERIES (KINDA LARGE DEVICES) ======================= */
+
+@media screen and (max-width:1500px) {
+   
+    .selected__accent {
+    
+        top:22%;
+        left:0%;
+            
+}
+  
+  
+    .faqhome__container {
+        grid-template-columns: 1fr;
+
+    }
+
+   
+}
+
+
+/*============== MEDIA QUERIES (MEDIUM DEVICES) ======================= */
+
+@media screen and (max-width:1024px) {
+    .faqhome__container {
+        grid-template-columns: 1fr;
+        gap:0rem;
+    }
+
+    .selected__accent {
+       display: none;
+            
+}
+
+    .faqhome__container > div {
+        width:80%;
+        padding:2rem;
+        margin:0 auto;
+    }
+
+    .faqhome__content {
+        padding: 1rem;
+    }
+}
+
+
+/*============== MEDIA QUERIES (SMALL DEVICES) ======================= */
+
+@media screen and (max-width:600px) {
+    .faqhome__item {
+      
+       margin-top: -8rem;
+     
+    }
+
+    .faqhome__container > div {
+        width:100%;
+       /* padding:2rem 1rem;*/
+
+    }
+
+
+ 
+
+}
+
+ 
+
+
+
+

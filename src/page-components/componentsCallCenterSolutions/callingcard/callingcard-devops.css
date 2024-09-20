@@ -1,0 +1,395 @@
+#callingcard {
+    /* height:100vh;
+     padding-top: 7rem;
+     overflow:visible;*/
+     /* padding-top: 5rem;*/
+     background-color: inherit;
+      margin-top: 4rem;
+ }
+ 
+ .callingcard__container-callingcard-devops1 {
+     text-align: center;
+     height:100%;
+     margin-top: 2rem;
+     margin-bottom: 2rem;
+     
+     
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+     gap:5rem; 
+   
+     position: relative;
+     top:-1rem;
+ }
+
+
+
+ .callingcard__container-callingcard-devops2 {
+    text-align: center;
+    height:100%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    gap:5rem; 
+
+  
+    position: relative;
+    top:-1rem;
+
+}
+
+
+
+
+.callingcard__container-callingcard-devops3 {
+    height:100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap:5rem; 
+  
+    position: relative;
+    top:-1rem;
+}
+
+
+
+
+
+ .callingcard__container-devops {
+    text-align: center;
+    height:100%;
+    position:relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:1rem; 
+   
+}
+
+
+
+
+
+
+
+
+  
+
+
+
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-rows: repeat(2, 1fr); /* Two rows */
+    gap: 1rem; /* Vertical and horizontal spacing */
+  }
+  
+  /* Style for each image */
+  .image-grid img {
+    width: 100%; /* Make images fill their grid cell */
+    height: 100%; /* Make images fill their grid cell */
+    object-fit: cover; /* Ensure images cover the grid cell without distortion */
+    border-radius: 1rem; /* Border radius for rounded corners */
+    display: block; /* Remove extra space below images */
+  }
+  
+  /* Optional: Ensures the grid container itself maintains aspect ratio */
+  .image-grid {
+    aspect-ratio: 1 / 1; /* Optional: Maintains a square aspect ratio for the grid */
+  }
+
+
+  .img-i1,
+.img-i3 {
+  position: relative;
+  transform: translateY(-2rem); /* Move images upwards by 2rem */
+ 
+}
+
+.img-i2 {
+ height:8rem;
+}
+
+.img-i4 {
+    height:10rem;
+}
+
+
+
+
+
+
+.callingcardExplainer-devops h2{
+    font-size: 2.6rem;
+   
+   }
+
+.callingcardExplainer-devops-p{
+ font-size: 1.2rem;
+ line-height: 2;
+}
+
+
+ 
+ .callingcardExplainer-devops{
+     flex:1;
+      /*max-width: 82%;*/
+     padding-top: 0%;
+     padding-left: 1%;
+     text-align: left;
+    
+     
+     
+
+    
+ }
+
+ .callingcardExplainer-devops h2{
+    font-size: 2rem;
+  
+   }
+
+ .callingcardExplainer-callingcard-p{
+  font-size: 1.2rem;
+  line-height: 2;
+ }
+ 
+ .callingcardCTA-callingcard-open-sips{
+     flex:1;
+     position: relative;
+     top:3rem;
+     
+    
+ }
+ 
+ .CTAbox{
+     background-color: var(--color-white);
+     height: 480px;
+     width: 400px;
+     padding:5%;
+     z-index: 100;
+ }
+
+
+
+ .CTAboximg-callingcard{
+ border-radius: 0%;
+ width:500px;
+ aspect-ratio: 1.4 /1;
+ }
+ 
+ .btn-place{
+     position: relative;
+     top:40%;
+     /*this positioning isnt exactly right but we'll  come back to it*/
+ }
+
+
+
+.callingcard-btn-placement {
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:3rem;
+    position: relative;
+    top:3.5px
+   
+   }
+
+
+ 
+ .clip-path-bottom-right{
+   background: #0767A880;
+  
+  clip-path: ellipse(100% 97% at 100% 97%);
+   height: 100px;
+   width:100px; 
+ 
+   /*positioning of the quarter circle*/
+   position:absolute;
+   bottom:13%;
+   right:-10%;
+   z-index: 0;
+   /*positioning END*/
+ }
+ 
+ 
+ 
+ .clip-path-bottom-left{
+     background: var(--color-primary-variant) !important;
+  
+    clip-path: ellipse(100% 97% at 100% 97%);
+     height: 100px;
+     width:100px; 
+ 
+ 
+ /*positioning of the quarter circle*/
+ position:absolute;
+ bottom:13%;
+ left:-10%;
+ z-index: 0;
+   /*positioning END*/
+   }
+ 
+   
+ 
+   .clip-path-top-left{
+     background:var(--color-primary-variant);
+   
+    clip-path: ellipse(100% 97% at 0% 97%);
+     height: 100px;
+     width:100px; 
+ 
+     /*positioning of the quarter circle*/
+     position:absolute;
+     top:-5%;
+     left:-2%;
+     z-index: -1;
+ 
+     /*positioning END*/
+   }
+ 
+ /* ================ CTA ===============*/
+ .cta {
+     margin-top: 2.5rem;
+     display:flex;
+     gap:1rem; /*you need to add gap to your arsenal, you're still using margins inside flex and that sucks*/
+     justify-content: center;
+ 
+ }
+ 
+ 
+ /* ================ callingcard SOCIALS ===============*/
+ 
+ .callingcard__socials {
+     display:flex;
+     flex-direction:column;
+     align-items: center;
+     gap: 0.8rem;
+ 
+     /*this is how we get those funky placements that accentuate a website*/
+     position: absolute;
+     left:0;
+     bottom: 3rem;
+ }
+ 
+ /*notice how to do lines and shapes using "after pseudo element*/
+ 
+ .callingcard__socials::after{ /*i believe after and before are usuially just boxes , but it is our sizing and rotating of them that will make them into different shapes*/
+  content:'';
+  width:1px;
+  height:2rem;
+  background: var(--color-primary);
+ 
+ }
+ 
+ 
+ /* ================ ME ===============*/
+ 
+ .me {
+     background: linear-gradient(var(--color-primary),55% ,transparent);
+     width:24rem; 
+     height:32rem;
+     position:absolute;
+ 
+     /* this is how you can center an absolute element*/
+     /*normally i used to do top 50% left 50% but i guess it's the same thing*/
+     left:calc(50% - 11rem);
+     
+ 
+     margin-top:4rem;
+     border-radius:12rem 12rem 0 0;
+     overflow:visible;
+     padding:1rem 1.5rem 1.5rem 1.5rem;
+ }
+ 
+ /* ================ SCROLL DOWN ===============*/
+ 
+ .scroll__down {
+     position:absolute;
+     right:-2.3rem;
+     bottom:5rem;
+     transform:rotate(90deg);
+     font-weight:500;
+     font-size:1.1rem;
+ }
+ 
+ 
+ /* ======================== MEDIA QUERIES FOR callingcard (KINDA LARGE DEVICES) ======================*/
+ 
+ @media screen and (max-width:1500px) {
+    
+    .callingcard__container-callingcard {
+      
+       gap:4rem;
+        
+    }
+ 
+ 
+  }
+
+   /* ======================== MEDIA QUERIES FOR HEADER CHANGING TO COLUMN DISPLAY ======================*/
+
+ @media screen and (max-width:1300px) {
+
+    .callingcard__container-callingcard {
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+
+
+
+.callingcard-btn-placement {
+    flex-direction: column;
+    gap:1rem;
+}
+    
+ }
+ 
+ /* ======================== MEDIA QUERIES FOR callingcard (MEDIUM DEVICES) ======================*/
+ 
+ @media screen and (max-width:1024px) {
+    
+    .callingcard__container-callingcard {
+       flex-direction: column;
+       gap:4rem;
+     /*margin-top: 35rem !important;*/
+        
+    }
+ 
+ 
+  }
+  
+  
+  
+  /* ======================== MEDIA QUERIES FOR callingcard (SMALL DEVICES) ======================*/
+  
+  @media screen and (max-width:600px) {
+      
+    
+     
+      .callingcard__socials, .scroll__down{
+         display:none;
+      }
+
+      .callingcard__container-callingcard {
+       
+     /* margin-top: 40rem !important;*/
+         
+     }
+   
+   }
+ 

@@ -1,0 +1,489 @@
+.header-bs {
+   height:90vh;
+   /* padding-top: 7rem;
+    overflow:visible;*/
+    /* padding-top: 5rem;*/
+    /*background-color: var(--color-header) ;*/
+   /* background-color: #3B4CA6 !important;*/
+    position: relative;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  url('src/assets/images/pen-paper-bg.jpeg');
+    /*background-color: #FFFFFF;*/
+    
+    /*background: url('src/assets/images/pen-paper-bg.jpeg');*/
+
+    
+     background-size:107% 120%;
+
+   /*background-size: cover;*/
+    background-position: center 103% /*106rem*/;
+   
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   /* linear-gradient(
+      
+     var(--color-header) ,var(--color-white)
+    ) */
+   /*z-index: -100;*/
+ 
+   margin-bottom: 0rem !important;
+}
+
+.header__container-1{
+    text-align: center;
+    height:100%;
+    
+    position:relative;
+    display: flex;
+    /*justify-content: space-between;*/
+    justify-content: center;
+   align-items: center;
+    gap:5rem;
+    z-index: 0;
+
+    width:85%;
+
+   
+  
+   
+}
+
+.header-btn-placement {
+
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ gap:1rem;
+
+}
+ 
+.consentWarning{
+    text-align: left;
+    background-color: var(--color-white);
+    padding:1rem;
+    border-radius: 2rem;
+}
+
+.consentWarning h4{
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+
+.selectedConsent {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.6rem;
+    text-align: left;
+}
+
+.headerExplainer-backend{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:3rem;
+
+    flex:1;
+    padding:5%;
+    padding-top: 0%;
+    padding-bottom: 10%;
+    text-align: left;
+    margin-top: -10rem;
+  
+}
+
+.headerCTA{
+    flex:1;
+    position: relative;
+   
+}
+
+.CTAbox{
+    background-color: var(--color-white);
+    height: 65%;
+    width: 100%;
+    padding:10%;
+    z-index: 100 ;
+    text-align:left;
+    border-radius: 1rem;
+    border: var(--separator-line);
+   
+}
+
+.CTAbox h4{
+    margin-top:1rem ;
+    
+  }
+
+.CTAbox h5{
+  margin-top:1.5rem ;
+  margin-bottom:0.5rem ;
+}
+
+.CTAbox input{
+    padding:5%;
+    border:var(--separator-line);
+    width: 90%;
+    border-radius: 0.5rem;
+    /*margin-bottom:3rem;*/
+}
+
+.btn-place{
+    position: relative;
+    top:0% !important;
+    right:5%;
+    /*this positioning isnt exactly right but we'll  come back to it*/
+}
+
+.sliderLabel {
+    background-color:var(--color-primary);
+    border-radius:2rem;
+    width:max-content;
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+    color:white;
+    position: relative;
+    top:0.5rem;
+   
+}
+
+.sliderEnds {
+    margin-top: -1rem;
+}
+
+.clip-path-top-left-1{
+    background:var(--color-primary-variant);
+  
+   clip-path: ellipse(100% 97% at 0% 97%);
+    height: 100px;
+    width:100px; 
+
+    /*positioning of the quarter circle*/
+    position:absolute;
+    top:-5%;
+    left:-2%;
+    z-index: -1;
+
+    /*positioning END*/
+  }
+
+
+.clip-path-bottom-left-1{
+    background: var(--color-primary-variant) !important;
+
+  
+  clip-path: ellipse(100% 97% at 100% 97%);
+    height: 100px;
+    width:100px; 
+
+
+/*positioning of the quarter circle*/
+position:absolute;
+/*top:85%;*/
+top:25rem;
+left:-4rem;
+z-index: -1;
+  /*positioning END*/
+  }
+
+.clip-path-bottom-right-1{
+  background: #0767A880 !important;
+  background-image:none !important;
+ clip-path: ellipse(100% 97% at 100% 97%);
+  height: 100px;
+  width:100px; 
+
+  /*positioning of the quarter circle*/
+  position:absolute;
+  top:25rem;
+  /*left:60%;*/
+  left:22rem;
+  
+  z-index: -1;
+  /*positioning END*/
+}
+
+
+
+
+  
+
+  
+
+/* ================ CTA ===============*/
+.cta {
+    margin-top: 2.5rem;
+    display:flex;
+    gap:1rem; /*you need to add gap to your arsenal, you're still using margins inside flex and that sucks*/
+    justify-content: center;
+
+}
+
+
+/* ================ HEADER SOCIALS ===============*/
+
+.header__socials {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 0.8rem;
+
+    /*this is how we get those funky placements that accentuate a website*/
+    position: absolute;
+    left:0;
+    bottom: 3rem;
+}
+
+/*notice how to do lines and shapes using "after pseudo element*/
+
+.header__socials::after{ /*i believe after and before are usuially just boxes , but it is our sizing and rotating of them that will make them into different shapes*/
+ content:'';
+ width:1px;
+ height:2rem;
+ background: var(--color-primary);
+
+}
+
+
+/* ================ ME ===============*/
+
+.me {
+    background: linear-gradient(var(--color-primary),55% ,transparent);
+    width:24rem; 
+    height:32rem;
+    position:absolute;
+
+    /* this is how you can center an absolute element*/
+    /*normally i used to do top 50% left 50% but i guess it's the same thing*/
+    left:calc(50% - 11rem);
+    
+
+    margin-top:4rem;
+    border-radius:12rem 12rem 0 0;
+    overflow:visible;
+    padding:1rem 1.5rem 1.5rem 1.5rem;
+}
+
+/* ================ SCROLL DOWN ===============*/
+
+.scroll__down {
+    position:absolute;
+    right:-2.3rem;
+    bottom:5rem;
+    transform:rotate(90deg);
+    font-weight:500;
+    font-size:1.1rem;
+}
+
+
+@media screen and (max-width:1600px) {
+
+    .clip-path-bottom-right-1{
+
+        
+       /* left:70%;*/
+       left:22rem;
+  
+    }
+
+    .header__container-1{
+        gap:2rem;
+      
+    }
+
+
+
+    .headerExplainer-backend{
+       
+        text-align:left;
+        margin-top: 0rem;
+    }
+}
+
+
+/* ======================== MEDIA QUERIES FOR HEADER (MEDIUM DEVICES) ======================*/
+
+@media screen and (max-width:1300px) {
+   
+    .header__container-1 {
+        
+        align-items: center;
+    }
+
+
+    .headerExplainer-backend{
+       
+        text-align:left;
+        margin-top: 0rem;
+    }
+
+    
+    .clip-path-bottom-left-1{
+
+    /* top:80%;*/
+     top:25rem;
+  
+    }
+
+
+    .clip-path-bottom-right-1{
+
+       /* top:80%;*/
+       /* left:80%;*/
+       left:22rem;
+        top:25rem;
+  
+    }
+
+    .header__container-1{
+        gap:6rem;
+      
+    }
+
+   
+   
+
+ }
+
+  /* ======================== MEDIA QUERIES FOR HEADER CHANGING TO COLUMN DISPLAY ======================*/
+
+ @media screen and (max-width:1300px) {
+
+    .header__container-1 {
+        flex-direction: column !important;
+        align-items: center;
+    }
+    
+ }
+ 
+
+ /* ======================== MEDIA QUERIES FOR HEADER (MEDIUM DEVICES) ======================*/
+
+@media screen and (max-width:1150px) {
+   
+
+
+    .header-btn-placement {
+
+        flex-direction: column;
+        gap:0rem;
+    }
+    
+    .clip-path-bottom-left-1{
+
+     /*top:70%;*/
+     top:25rem;
+  
+    }
+
+
+    .clip-path-bottom-right-1{
+
+        /*top:70%;*/
+       top:25rem;
+  
+    }
+
+    .header__container-1 {
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+
+
+ }
+ 
+
+
+ /* ======================== MEDIA QUERIES FOR HEADER (KINDA SMALL DEVICES) ======================*/
+
+@media screen and (max-width:1102px) {
+
+   
+    
+    .clip-path-bottom-left-1{
+
+     /*top:75%;*/
+     top:25rem;
+  
+    }
+
+
+    .clip-path-bottom-right-1{
+
+        /*top:75%;*/
+        top:25rem;
+    }
+
+
+ }
+ 
+
+   /* ======================== MEDIA QUERIES FOR HEADER (KINDA SMALL DEVICES) ======================*/
+
+@media screen and (max-width:1050px) {
+   
+    
+    .clip-path-bottom-left-1{
+
+     /*top:60%;*/
+     top:25rem;
+  
+    }
+
+
+    .clip-path-bottom-right-1{
+
+        /*top:60%;*/
+        top:25rem;
+       
+    }
+
+
+ }
+
+
+ @media screen and (max-width:1024px) {
+      
+    .header__container-1 {
+        padding-top: 8rem; /*THIS IS WHERE U(DAGOGO) PUSHED THE HEADER DOWN FOR SMALLER SCREENS*/
+    }
+
+   
+
+        
+ 
+ }
+ 
+ /* ======================== MEDIA QUERIES FOR HEADER (SMALL DEVICES) ======================*/
+ 
+ @media screen and (max-width:600px) {
+     
+    .clip-path-bottom-left-1{
+
+        /*top:50%;*/
+        top:25rem;
+        left:-1.5rem !important;
+     
+       }
+   
+   
+       .clip-path-bottom-right-1{
+   
+          /* top:50%;*/
+           top:25rem;
+           left:19.5rem !important;
+     
+       }
+    
+     .header__socials, .scroll__down{
+        display:none;
+     }
+  
+  }
+
+
+

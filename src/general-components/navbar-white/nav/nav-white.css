@@ -1,0 +1,175 @@
+.nav-pm {
+    /*background: var(--color-bg-nav);*/
+    background-color: /*#3B4CA6;*/  inherit/*rgba(59, 76, 166, 0.4)*/;
+    width:100vw /*max-content*/; /*max content fits the width of the content itself*/
+    display: block;
+    padding:0rem 1.7rem;
+    padding-top: 0.2rem;
+    position:relative;
+    z-index: 1000 !important;
+    position: absolute;
+    top:1rem;
+    
+
+    /*another centering style when youdont know the 
+    exact dimensions of the container element */
+
+   left:50%;
+    transform: translateX(-50%);
+   /* bottom: 2rem;*/
+
+    display:flex;
+    gap:0.8rem; /*the gap for display flex is on the same level as display flex*/
+    /*border-radius: 3rem;*/
+   /* backdrop-filter:blur(15px); please what is backdrop filter ? go research */
+    
+}
+
+.navContainer {
+    margin: 0 auto;
+    width: var(--container-width-lg);
+
+    display:flex;
+    justify-content: space-between;
+
+   
+}
+
+.optionsBar {
+    width:50%;
+    
+   
+}
+
+.navLinks {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color:var(--color-white);
+    
+}
+
+
+.nav-pm a {
+    background:transparent;
+    padding:0.9rem;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--color-white) ;
+    font-size:1.1rem; 
+    text-decoration: none;
+}
+
+.nav-pm a:hover {
+    color:var(--color-button);
+}
+
+.mobileDisp {
+   /* display: none ;*/
+   
+}
+
+
+
+.nav-pm a.active-white {
+    /*background:var(--color-primary);*/
+    /*color:var(--color-bg);*/
+    background-color: #FFF000;
+    color:black;
+    border-radius:2rem;
+    width:7rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+
+
+        
+
+
+
+
+
+/* ======================== MEDIA QUERIES FOR HEADER (MEDIUM DEVICES) ======================*/
+
+@media screen and (max-width:1024px) {
+    .navContainer {
+        
+        width: var(--container-width-md);
+    
+      
+       
+    }
+
+   
+
+
+
+    .mobileDisp {
+        display: inline-block !important;
+        opacity: 1;
+    }
+
+   
+    }
+
+
+    /* ======================== MEDIA QUERIES (BRING IN AN OPAQUE LOGO) ======================*/
+    @media screen and (max-width:960px) {
+    
+        .nav-pm {
+          
+            position: fixed !important;
+            top:0 !important; 
+            
+           
+            /* width:100% !important;just for the navbar*/
+          }
+
+          
+        .nav-pm{
+           /* background-color: #3B4CA6;*/
+        }
+
+    }
+
+
+
+    /* ======================== MEDIA QUERIES (KINDA MEDIUM DEVICES) ======================*/
+
+    @media screen and (max-width:900px) {
+      
+        .desktopDisp {
+            display: none !important;
+        }
+     
+     }
+    
+
+
+    
+    /* ======================== MEDIA QUERIES FOR HEADER (SMALL DEVICES) ======================*/
+    
+    @media screen and (max-width:600px) {
+        
+        .navContainer {
+          
+            width: var(--container-width-sm);
+           
+           
+        }
+
+        .mobileDisp {
+            display: inline-block;
+        }
+     
+        .desktopDisp {
+         display: none;
+        }
+     }
+   

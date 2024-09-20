@@ -1,0 +1,163 @@
+#choice {
+    background: var(--color-bg-variant);
+}
+
+
+.choice__container {
+    display:grid;
+    grid-template-columns: 1fr  1fr 1fr;
+    gap:2rem;
+}
+
+.choice__container  > div {
+  background:transparent;
+  padding:2.4rem 5rem;
+  
+  border:  var(--separator-line);
+  border-radius: 5%;
+  transition:var(--transition);
+ 
+ /* box-shadow: var(--feature-shadow);
+-webkit-box-shadow: var(--feature-shadow);
+-moz-box-shadow: var(--feature-shadow);*/
+}
+
+
+.choice__container  > div:hover {
+    background: transparent;
+    border-color:var(--color-primary-variant);
+    
+    cursor:default;
+}
+
+.choice__container > div h3 {
+  text-align:left;
+  margin-bottom: 2rem;
+ 
+}
+
+.word__container {
+    grid-row: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:1.5rem;
+}
+
+.choice__backend {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+
+}
+
+
+.choice-small-image {
+ /*flex:2;*/
+ position: relative;
+ top:15%;
+
+}
+
+.large-desc {
+   /* flex:5;*/
+}
+
+.choice-small-image img {
+    height:60px;
+    width:60px;
+}
+
+.choice__content {
+   display:grid;
+   grid-template-columns: 1fr 1fr;
+   row-gap:2rem;
+}
+
+.choice__details {
+    display:flex;
+    gap:1rem;
+
+}
+
+.choice__details-icon {
+    margin-top: 6px;
+    color:var(--color-primary);
+
+}
+
+
+.btn-pos {
+   margin-top: 5%;
+}
+
+
+/*============== MEDIA QUERIES (KINDA LARGE DEVICES) ======================= */
+
+@media screen and (max-width:1500px) {
+    .choice__container {
+        grid-template-columns:  1fr;
+
+    }
+
+    .choice__container > div h3 {
+        text-align:center;
+        margin-bottom: 2rem;
+       
+      }
+
+      .choice-small-image {
+        /*flex:2;*/
+        position: relative;
+        margin:0 auto;
+       
+       }
+}
+
+
+/*============== MEDIA QUERIES (MEDIUM DEVICES) ======================= */
+
+@media screen and (max-width:1024px) {
+    .choice__container {
+        grid-template-columns: 1fr;
+
+    }
+
+    .choice__container > div {
+        width:80%;
+        padding:2rem;
+        margin:0 auto;
+    }
+
+    .choice__content {
+        padding: 1rem;
+    }
+}
+
+
+/*============== MEDIA QUERIES (SMALL DEVICES) ======================= */
+
+@media screen and (max-width:600px) {
+    .choice__container {
+        
+        gap: 1rem;
+
+    }
+
+    .choice__container > div {
+        width:100%;
+        padding:2rem 1rem;
+
+    }
+
+
+
+
+}
+
+ 
+
+
+
+
