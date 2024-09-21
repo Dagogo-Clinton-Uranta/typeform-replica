@@ -10,6 +10,9 @@ import { useForm } from 'react-hook-form'
 
 import callCenter from 'src/assets/images/callcenter.png'
 
+
+import { FaCheck } from "react-icons/fa";
+
 const steps = [
   {
     id: 'Step 1',
@@ -81,16 +84,231 @@ const steps = [
     fields: ['wire']
   },
 
+  {
+    id: 'Step 12',
+    name: 'Expertise',
+    fields: ['expertise']
+  },
+
+  {
+    id: 'Step 13',
+    name: 'Expertise',
+    fields: ['expertise']
+  },
+
+  {
+    id: 'Step 14',
+    name: 'Expertise',
+    fields: ['expertise']
+  },
+
+  {
+    id: 'Step 15',
+    name: 'Expertise',
+    fields: ['expertise']
+  },
+
+  {
+    id: 'Step 16',
+    name: 'Expertise',
+    fields: ['expertise']
+  },
+
+  {
+    id: 'Step 17',
+    name: 'Expertise',
+    fields: ['expertise']
+  },
+
+  {
+    id: 'Step 18',
+    name: 'Expertise',
+    fields: ['expertise']
+  },
+
+  {
+    id: 'Step 19',
+    name: 'Expertise',
+    fields: ['expertise']
+  },
+
+  {
+    id: 'Step 20',
+    name: 'Expertise',
+    fields: ['expertise']
+  },
 
 
 
-  { id: 'Step 12', name: 'Complete' }
+  { id: 'Step 21', name: 'Complete' }
 ]
 
 export default function Form() {
   const [previousStep, setPreviousStep] = useState(0)
   const [currentStep, setCurrentStep] = useState(0)
   const [isExploding, setIsExploding] = useState(false);
+
+
+  const [selectedOption, setSelectedOption] = useState(null);
+
+  const options = [
+    { letter: 'A', label: 'Beginner' },
+    { letter: 'B', label: 'Intermediate' },
+    { letter: 'C', label: 'Advanced' },
+    { letter: 'D', label: 'Expert' },
+  ];
+
+  const handleSelect = (option) => {
+    setSelectedOption(option);
+  };
+
+
+
+  const [selectedOption2, setSelectedOption2] = useState(null);
+
+  const options2 = [
+    { letter: 'A', label: 'JavaScript' },
+    { letter: 'B', label: 'Python' },
+    { letter: 'C', label: 'Java' },
+    { letter: 'D', label: 'Ruby' },
+    { letter: 'E', label: 'C++' },
+  ];
+
+  const handleSelect2 = (option) => {
+    setSelectedOption2(option);
+  };
+
+
+
+
+
+  const [selectedOption3, setSelectedOption3] = useState(null);
+
+  const options3 = [
+    { letter: 'Y', label: 'Yes' },
+    { letter: 'N', label: 'No' },
+    
+  ];
+
+  const handleSelect3 = (option) => {
+    setSelectedOption3(option);
+  };
+
+
+
+
+
+  const [selectedOption4, setSelectedOption4] = useState(null);
+
+  const options4 = [
+    { letter: 'A', label: 'Beginner' },
+    { letter: 'B', label: 'Intermediate' },
+    { letter: 'C', label: 'Advanced' },
+    { letter: 'D', label: 'Expert' },
+  ];
+
+  const handleSelect4 = (option) => {
+    setSelectedOption4(option);
+  };
+
+
+
+
+
+  const [selectedOption5, setSelectedOption5] = useState(null);
+
+  const options5 = [
+    { letter: 'A', label: 'Email' },
+    { letter: 'B', label: 'Phone' },
+    { letter: 'C', label: 'Slack' },
+    { letter: 'D', label: 'Zoom' },
+    { letter: 'E', label: 'Other' },
+  ];
+
+  const handleSelect5 = (option) => {
+    setSelectedOption5(option);
+  };
+
+
+
+
+  const [selectedOption6, setSelectedOption6] = useState(null);
+
+  const options6 = [
+    { letter: 'Y', label: 'Yes' },
+    { letter: 'N', label: 'No' },
+   
+  ];
+
+  const handleSelect6 = (option) => {
+    setSelectedOption6(option);
+  };
+
+
+
+
+  const [selectedOption7, setSelectedOption7] = useState(null);
+
+  const options7 = [
+    { letter: 'Y', label: 'Yes' },
+    { letter: 'N', label: 'No' },
+   
+  ];
+
+  const handleSelect7 = (option) => {
+    setSelectedOption7(option);
+  };
+
+
+
+
+  const [selectedOption8, setSelectedOption8] = useState(null);
+
+  const options8 = [
+    { letter: 'Y', label: 'Yes' },
+    { letter: 'N', label: 'No' },
+   
+  ];
+
+  const handleSelect8 = (option) => {
+    setSelectedOption8(option);
+  };
+
+
+
+
+  const [selectedOption9, setSelectedOption9] = useState(null);
+
+  const options9 = [
+    { letter: 'Y', label: 'Yes' },
+    { letter: 'N', label: 'No' },
+   
+  ];
+
+  const handleSelect9 = (option) => {
+    setSelectedOption9(option);
+  };
+
+
+
+
+  const [selectedOption10, setSelectedOption10] = useState(null);
+
+  const options10 = [
+    { letter: 'A', label: 'API Scraper' },
+    { letter: 'B', label: 'Python Developer' },
+    { letter: 'C', label: 'Frontend Developer' },
+    { letter: 'D', label: 'UI/UX Designer' },
+    { letter: 'E', label: 'Full Stack Developer' },
+  ];
+
+  const handleSelect10 = (option) => {
+    setSelectedOption10(option);
+  };
+
+
+
+
 
   const delta = currentStep - previousStep
 
@@ -189,6 +407,7 @@ export default function Form() {
       <form className='mt-12 py-3 w-[75%] mx-auto'  onSubmit={handleSubmit(processForm)}>
         {currentStep === 0 && (
           <motion.div
+          style={{scale:"0.8"}}
             initial={{ y: delta >= 0 ? '50%' : '-50%', opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
@@ -338,144 +557,129 @@ export default function Form() {
           </motion.div>
         )}
 
-        {/*currentStep === 1 && (
+      
+{currentStep === 1 && (
           <motion.div
             initial={{ y: delta >= 0 ? '50%' : '-50%', opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
-            <h2 className='text-base font-semibold leading-7 text-gray-900'>
-              Address
+            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+              Expertise
             </h2>
-            <p className='mt-1 text-sm leading-6 text-gray-600'>
-              Address where you can receive mail.
-            </p>
+           {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
+              Provide your personal details.
+            </p>*/}
+            <div className='mt-10 flex flex-col space-y-24'> 
 
-            <div className='mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6'>
-              <div className='sm:col-span-3'>
-                <label
-                  htmlFor='country'
-                  className='block text-sm font-medium leading-6 text-gray-900'
-                >
-                  Country
-                </label>
-                <div className='mt-2'>
-                  <select
-                    id='country'
-                    {...register('country')}
-                    autoComplete='country-name'
-                    className='block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:max-w-xs sm:text-sm sm:leading-6'
-                  >
-                    <option>United States</option>
-                    <option>Canada</option>
-                    <option>Mexico</option>
-                  </select>
-                  {errors.country?.message && (
-                    <p className='mt-2 text-sm text-red-400'>
-                      {errors.country.message}
-                    </p>
-                  )}
-                </div>
-              </div>
+{/* First Name */}
+<div className='w-full mb-6'>
+  <label
+    htmlFor='frameworks'
+    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+  >
+   What is your level of experience in software development?
+  </label>
 
-              <div className='col-span-full'>
-                <label
-                  htmlFor='street'
-                  className='block text-sm font-medium leading-6 text-gray-900'
-                >
-                  Street address
-                </label>
-                <div className='mt-2'>
-                  <input
-                    type='text'
-                    id='street'
-                    {...register('street')}
-                    autoComplete='street-address'
-                    className='block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6'
-                  />
-                  {errors.street?.message && (
-                    <p className='mt-2 text-sm text-red-400'>
-                      {errors.street.message}
-                    </p>
-                  )}
-                </div>
-              </div>
-
-              <div className='sm:col-span-2 sm:col-start-1'>
-                <label
-                  htmlFor='city'
-                  className='block text-sm font-medium leading-6 text-gray-900'
-                >
-                  City
-                </label>
-                <div className='mt-2'>
-                  <input
-                    type='text'
-                    id='city'
-                    {...register('city')}
-                    autoComplete='address-level2'
-                    className='block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6'
-                  />
-                  {errors.city?.message && (
-                    <p className='mt-2 text-sm text-red-400'>
-                      {errors.city.message}
-                    </p>
-                  )}
-                </div>
-              </div>
-
-              <div className='sm:col-span-2'>
-                <label
-                  htmlFor='state'
-                  className='block text-sm font-medium leading-6 text-gray-900'
-                >
-                  State / Province
-                </label>
-                <div className='mt-2'>
-                  <input
-                    type='text'
-                    id='state'
-                    {...register('state')}
-                    autoComplete='address-level1'
-                    className='block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6'
-                  />
-                  {errors.state?.message && (
-                    <p className='mt-2 text-sm text-red-400'>
-                      {errors.state.message}
-                    </p>
-                  )}
-                </div>
-              </div>
-
-              <div className='sm:col-span-2'>
-                <label
-                  htmlFor='zip'
-                  className='block text-sm font-medium leading-6 text-gray-900'
-                >
-                  ZIP / Postal code
-                </label>
-                <div className='mt-2'>
-                  <input
-                    type='text'
-                    id='zip'
-                    {...register('zip')}
-                    autoComplete='postal-code'
-                    className='block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6'
-                  />
-                  {errors.zip?.message && (
-                    <p className='mt-2 text-sm text-red-400'>
-                      {errors.zip.message}
-                    </p>
-                  )}
-                </div>
-              </div>
+    <div className='flex flex-col space-y-4'>
+      {options.map((option, index) => (
+        <div
+          key={index}
+          onClick={() => handleSelect(option.label)}
+          className={`flex items-center justify-between w-120 p-4 border border-blue-300 rounded-lg cursor-pointer transition-colors duration-300 
+          ${selectedOption === option.label ? 'bg-blue-200' : 'bg-blue-100'} hover:bg-blue-200`} // Hover and select states
+          style={{ borderRadius: '0.5rem', fontSize: '1.9rem' }}
+        >
+          <div className='flex items-center'>
+            <div className='flex items-center justify-center w-24 h-24 bg-white text-blue-700 border border-blue-300 rounded-full mr-16'>
+              {option.letter}
             </div>
+            <span className='text-blue-700'>{option.label}</span>
+          </div>
+          {selectedOption === option.label && (
+            <FaCheck className='w-18 h-18 text-blue-700' /> // Adding tick icon when selected
+               
+          
+          )}
+        </div>
+      ))}
+    </div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+
           </motion.div>
-        )*/}
+        )}
+
+{currentStep === 2 && (
+          <motion.div
+            initial={{ y: delta >= 0 ? '50%' : '-50%', opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+          >
+            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+              Proficiency
+            </h2>
+           {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
+              Provide your personal details.
+            </p>*/}
+            <div className='mt-10 flex flex-col space-y-24'> 
+
+{/* First Name */}
+<div className='w-full mb-6'>
+  <label
+    htmlFor='frameworks'
+    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+  >
+   Which programming languages are you proficient in?
+  </label>
+
+    <div className='flex flex-col space-y-4'>
+      {options2.map((option, index) => (
+        <div
+          key={index}
+          onClick={() => handleSelect2(option.label)}
+          className={`flex items-center justify-between w-120 p-4 border border-blue-300 rounded-lg cursor-pointer transition-colors duration-300 
+          ${selectedOption2 === option.label ? 'bg-blue-200' : 'bg-blue-100'} hover:bg-blue-200`} // Hover and select states
+          style={{ borderRadius: '0.5rem', fontSize: '1.9rem' }}
+        >
+          <div className='flex items-center'>
+            <div className='flex items-center justify-center w-24 h-24 bg-white text-blue-700 border border-blue-300 rounded-full mr-16'>
+              {option.letter}
+            </div>
+            <span className='text-blue-700'>{option.label}</span>
+          </div>
+          {selectedOption2 === option.label && (
+            <FaCheck className='w-18 h-18 text-blue-700' /> // Adding tick icon when selected
+               
+          
+          )}
+        </div>
+      ))}
+    </div>
+
+</div>
 
 
 
-{currentStep === 1 && (
+
+
+
+</div>
+
+
+          </motion.div>
+        )}
+
+
+{currentStep === 3 && (
           <motion.div
             initial={{ y: delta >= 0 ? '50%' : '-50%', opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -495,7 +699,7 @@ export default function Form() {
     htmlFor='frameworks'
     className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
   >
-    Have you worked with any frontend frameworks before?
+    Have you worked with any specific frameworks before?
   </label>
   <div className='mt-2'>
     <input
@@ -528,7 +732,7 @@ export default function Form() {
 
 
 
-{currentStep === 2 && (
+{currentStep === 4 && (
           <motion.div
             initial={{ y: delta >= 0 ? '50%' : '-50%', opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -582,7 +786,69 @@ export default function Form() {
 
 
 
-{currentStep === 3 && (
+{currentStep === 5 && (
+          <motion.div
+            initial={{ y: delta >= 0 ? '50%' : '-50%', opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+          >
+            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+              Version Control
+            </h2>
+           {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
+              Provide your personal details.
+            </p>*/}
+            <div className='mt-10 flex flex-col space-y-24'> 
+
+{/* First Name */}
+<div className='w-full mb-6'>
+  <label
+    htmlFor='frameworks'
+    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+  >
+   Are you familiar with version control systems like Git?
+  </label>
+
+    <div className='flex flex-col space-y-4'>
+      {options3.map((option, index) => (
+        <div
+          key={index}
+          onClick={() => handleSelect3(option.label)}
+          className={`flex items-center justify-between w-120 p-4 border border-blue-300 rounded-lg cursor-pointer transition-colors duration-300 
+          ${selectedOption3 === option.label ? 'bg-blue-200' : 'bg-blue-100'} hover:bg-blue-200`} // Hover and select states
+          style={{ borderRadius: '0.5rem', fontSize: '1.9rem' }}
+        >
+          <div className='flex items-center'>
+            <div className='flex items-center justify-center w-24 h-24 bg-white text-blue-700 border border-blue-300 rounded-full mr-16'>
+              {option.letter}
+            </div>
+            <span className='text-blue-700'>{option.label}</span>
+          </div>
+          {selectedOption3 === option.label && (
+            <FaCheck className='w-18 h-18 text-blue-700' /> // Adding tick icon when selected
+               
+          
+          )}
+        </div>
+      ))}
+    </div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+          </motion.div>
+        )}
+
+
+
+{currentStep === 6 && (
           <motion.div
             initial={{ y: delta >= 0 ? '50%' : '-50%', opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -636,14 +902,73 @@ export default function Form() {
 
 
 
-{currentStep === 4 && (
+
+{currentStep === 7 && (
           <motion.div
             initial={{ y: delta >= 0 ? '50%' : '-50%', opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
             <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
-              Github
+              Office Communication
+            </h2>
+           {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
+              Provide your personal details.
+            </p>*/}
+            <div className='mt-10 flex flex-col space-y-24'> 
+
+{/* First Name */}
+<div className='w-full mb-6'>
+  <label
+    htmlFor='frameworks'
+    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+  >
+   What is your preferred method of communication for work-related matters?
+  </label>
+
+    <div className='flex flex-col space-y-4'>
+      {options5.map((option, index) => (
+        <div
+          key={index}
+          onClick={() => handleSelect5(option.label)}
+          className={`flex items-center justify-between w-120 p-4 border border-blue-300 rounded-lg cursor-pointer transition-colors duration-300 
+          ${selectedOption5 === option.label ? 'bg-blue-200' : 'bg-blue-100'} hover:bg-blue-200`} // Hover and select states
+          style={{ borderRadius: '0.5rem', fontSize: '1.9rem' }}
+        >
+          <div className='flex items-center'>
+            <div className='flex items-center justify-center w-24 h-24 bg-white text-blue-700 border border-blue-300 rounded-full mr-16'>
+              {option.letter}
+            </div>
+            <span className='text-blue-700'>{option.label}</span>
+          </div>
+          {selectedOption5 === option.label && (
+            <FaCheck className='w-18 h-18 text-blue-700' /> // Adding tick icon when selected
+               
+          
+          )}
+        </div>
+      ))}
+    </div>
+
+</div>
+
+
+
+</div>
+
+
+          </motion.div>
+        )}
+
+
+{currentStep === 8 && (
+          <motion.div
+            initial={{ y: delta >= 0 ? '50%' : '-50%', opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+          >
+            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+              Github Link
             </h2>
            {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
               Provide your personal details.
@@ -688,9 +1013,192 @@ export default function Form() {
         )}
 
 
+{currentStep === 9 && (
+          <motion.div
+            initial={{ y: delta >= 0 ? '50%' : '-50%', opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+          >
+            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+              Team Work
+            </h2>
+           {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
+              Provide your personal details.
+            </p>*/}
+            <div className='mt-10 flex flex-col space-y-24'> 
+
+{/* First Name */}
+<div className='w-full mb-6'>
+  <label
+    htmlFor='frameworks'
+    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+  >
+   Are you comfortable working in a team environment?
+  </label>
+
+    <div className='flex flex-col space-y-4'>
+      {options6.map((option, index) => (
+        <div
+          key={index}
+          onClick={() => handleSelect6(option.label)}
+          className={`flex items-center justify-between w-120 p-4 border border-blue-300 rounded-lg cursor-pointer transition-colors duration-300 
+          ${selectedOption6 === option.label ? 'bg-blue-200' : 'bg-blue-100'} hover:bg-blue-200`} // Hover and select states
+          style={{ borderRadius: '0.5rem', fontSize: '1.9rem' }}
+        >
+          <div className='flex items-center'>
+            <div className='flex items-center justify-center w-24 h-24 bg-white text-blue-700 border border-blue-300 rounded-full mr-16'>
+              {option.letter}
+            </div>
+            <span className='text-blue-700'>{option.label}</span>
+          </div>
+          {selectedOption6 === option.label && (
+            <FaCheck className='w-18 h-18 text-blue-700' /> // Adding tick icon when selected
+               
+          
+          )}
+        </div>
+      ))}
+    </div>
+
+</div>
 
 
-{currentStep === 5 && (
+</div>
+
+
+          </motion.div>
+        )}
+
+
+
+
+{currentStep === 10 && (
+          <motion.div
+            initial={{ y: delta >= 0 ? '50%' : '-50%', opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+          >
+            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+              Agile Methodology
+            </h2>
+           {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
+              Provide your personal details.
+            </p>*/}
+            <div className='mt-10 flex flex-col space-y-24'> 
+
+{/* First Name */}
+<div className='w-full mb-6'>
+  <label
+    htmlFor='frameworks'
+    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+  >
+  Do you have experience with Agile development methodologies?
+  </label>
+
+    <div className='flex flex-col space-y-4'>
+      {options7.map((option, index) => (
+        <div
+          key={index}
+          onClick={() => handleSelect7(option.label)}
+          className={`flex items-center justify-between w-120 p-4 border border-blue-300 rounded-lg cursor-pointer transition-colors duration-300 
+          ${selectedOption7 === option.label ? 'bg-blue-200' : 'bg-blue-100'} hover:bg-blue-200`} // Hover and select states
+          style={{ borderRadius: '0.5rem', fontSize: '1.9rem' }}
+        >
+          <div className='flex items-center'>
+            <div className='flex items-center justify-center w-24 h-24 bg-white text-blue-700 border border-blue-300 rounded-full mr-16'>
+              {option.letter}
+            </div>
+            <span className='text-blue-700'>{option.label}</span>
+          </div>
+          {selectedOption7 === option.label && (
+            <FaCheck className='w-18 h-18 text-blue-700' /> // Adding tick icon when selected
+               
+          
+          )}
+        </div>
+      ))}
+    </div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+          </motion.div>
+        )}
+
+
+
+
+{currentStep === 11 && (
+          <motion.div
+            initial={{ y: delta >= 0 ? '50%' : '-50%', opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+          >
+            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+              Figma Design
+            </h2>
+           {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
+              Provide your personal details.
+            </p>*/}
+            <div className='mt-10 flex flex-col space-y-24'> 
+
+{/* First Name */}
+<div className='w-full mb-6'>
+  <label
+    htmlFor='frameworks'
+    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+  >
+  Are you a Figma designer?
+  </label>
+
+    <div className='flex flex-col space-y-4'>
+      {options8.map((option, index) => (
+        <div
+          key={index}
+          onClick={() => handleSelect8(option.label)}
+          className={`flex items-center justify-between w-120 p-4 border border-blue-300 rounded-lg cursor-pointer transition-colors duration-300 
+          ${selectedOption8 === option.label ? 'bg-blue-200' : 'bg-blue-100'} hover:bg-blue-200`} // Hover and select states
+          style={{ borderRadius: '0.5rem', fontSize: '1.9rem' }}
+        >
+          <div className='flex items-center'>
+            <div className='flex items-center justify-center w-24 h-24 bg-white text-blue-700 border border-blue-300 rounded-full mr-16'>
+              {option.letter}
+            </div>
+            <span className='text-blue-700'>{option.label}</span>
+          </div>
+          {selectedOption8 === option.label && (
+            <FaCheck className='w-18 h-18 text-blue-700' /> // Adding tick icon when selected
+               
+          
+          )}
+        </div>
+      ))}
+    </div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+          </motion.div>
+        )}
+
+
+
+
+{currentStep === 12 && (
           <motion.div
             initial={{ y: delta >= 0 ? '50%' : '-50%', opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -744,7 +1252,7 @@ export default function Form() {
 
 
 
-{currentStep === 6 && (
+{currentStep === 13 && (
           <motion.div
             initial={{ y: delta >= 0 ? '50%' : '-50%', opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -797,7 +1305,7 @@ export default function Form() {
 
 
 
-{currentStep === 7 && (
+{currentStep === 14 && (
           <motion.div
             initial={{ y: delta >= 0 ? '50%' : '-50%', opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -850,8 +1358,70 @@ export default function Form() {
 
 
 
+{currentStep === 15 && (
+          <motion.div
+            initial={{ y: delta >= 0 ? '50%' : '-50%', opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+          >
+            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+              English
+            </h2>
+           {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
+              Provide your personal details.
+            </p>*/}
+            <div className='mt-10 flex flex-col space-y-24'> 
 
-{currentStep === 8 && (
+{/* First Name */}
+<div className='w-full mb-6'>
+  <label
+    htmlFor='frameworks'
+    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+  >
+   Do you speak English?
+  </label>
+
+    <div className='flex flex-col space-y-4'>
+      {options9.map((option, index) => (
+        <div
+          key={index}
+          onClick={() => handleSelect9(option.label)}
+          className={`flex items-center justify-between w-120 p-4 border border-blue-300 rounded-lg cursor-pointer transition-colors duration-300 
+          ${selectedOption9 === option.label ? 'bg-blue-200' : 'bg-blue-100'} hover:bg-blue-200`} // Hover and select states
+          style={{ borderRadius: '0.5rem', fontSize: '1.9rem' }}
+        >
+          <div className='flex items-center'>
+            <div className='flex items-center justify-center w-24 h-24 bg-white text-blue-700 border border-blue-300 rounded-full mr-16'>
+              {option.letter}
+            </div>
+            <span className='text-blue-700'>{option.label}</span>
+          </div>
+          {selectedOption9 === option.label && (
+            <FaCheck className='w-18 h-18 text-blue-700' /> // Adding tick icon when selected
+               
+          
+          )}
+        </div>
+      ))}
+    </div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+          </motion.div>
+        )}
+
+
+
+
+{currentStep === 16 && (
           <motion.div
             initial={{ y: delta >= 0 ? '50%' : '-50%', opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -899,7 +1469,7 @@ export default function Form() {
 
 
 
-{currentStep === 9 && (
+{currentStep === 17 && (
           <motion.div
             initial={{ y: delta >= 0 ? '50%' : '-50%', opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -947,7 +1517,71 @@ export default function Form() {
 
 
 
-{currentStep === 10 && (
+
+{currentStep === 18 && (
+          <motion.div
+            initial={{ y: delta >= 0 ? '50%' : '-50%', opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+          >
+            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+              Position
+            </h2>
+           {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
+              Provide your personal details.
+            </p>*/}
+            <div className='mt-10 flex flex-col space-y-24'> 
+
+{/* First Name */}
+<div className='w-full mb-6'>
+  <label
+    htmlFor='frameworks'
+    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+  >
+   Which of the following are you applying for?
+
+  </label>
+
+    <div className='flex flex-col space-y-4'>
+      {options10.map((option, index) => (
+        <div
+          key={index}
+          onClick={() => handleSelect10(option.label)}
+          className={`flex items-center justify-between w-120 p-4 border border-blue-300 rounded-lg cursor-pointer transition-colors duration-300 
+          ${selectedOption10 === option.label ? 'bg-blue-200' : 'bg-blue-100'} hover:bg-blue-200`} // Hover and select states
+          style={{ borderRadius: '0.5rem', fontSize: '1.9rem' }}
+        >
+          <div className='flex items-center'>
+            <div className='flex items-center justify-center w-24 h-24 bg-white text-blue-700 border border-blue-300 rounded-full mr-16'>
+              {option.letter}
+            </div>
+            <span className='text-blue-700'>{option.label}</span>
+          </div>
+          {selectedOption10 === option.label && (
+            <FaCheck className='w-18 h-18 text-blue-700' /> // Adding tick icon when selected
+               
+          
+          )}
+        </div>
+      ))}
+    </div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+          </motion.div>
+        )}
+
+
+
+{currentStep === 19 && (
           <motion.div
             initial={{ y: delta >= 0 ? '50%' : '-50%', opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -996,7 +1630,16 @@ export default function Form() {
 
 
 
-{currentStep === 11 && (
+
+
+
+
+
+
+
+
+
+{currentStep === 20 && (
         
           <motion.div
             initial={{ y: delta >= 0 ? '50%' : '-50%', opacity: 0 }}
