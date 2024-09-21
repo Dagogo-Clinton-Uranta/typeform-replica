@@ -435,7 +435,7 @@ export default function Form() {
       placeholder='First Name'
       {...register('firstName')}
       autoComplete='given-name'
-      className='block w-full border-b-2 border-blue-500  text-2xl text-blue-500 placeholder:text-blue-100 py-1.5 focus:border-blue-700 focus:outline-none'
+      className='block w-full border-b-2 border-blue-500  text-[1.1rem] md:text-[1.9rem] text-blue-500 placeholder:text-[1.1rem] md:placeholder:text-[1.9rem] placeholder:text-blue-100 py-1.5 focus:border-blue-700 focus:outline-none'
       style={{ fontSize: '2.5rem' }} 
     />
     {errors.firstName?.message && (
@@ -461,7 +461,7 @@ export default function Form() {
       placeholder='Last Name'
       {...register('lastName')}
       autoComplete='family-name'
-      className='block w-full border-b-2 border-blue-500 text-2xl py-1.5  placeholder:text-blue-100 text-blue-500 focus:border-blue-700 focus:outline-none'
+      className='block w-full border-b-2 border-blue-500 text-[1.1rem] md:text-[1.9rem] py-1.5 placeholder:text-[1.1rem] md:placeholder:text-[1.9rem]  placeholder:text-blue-100 text-blue-500 focus:border-blue-700 focus:outline-none'
       style={{ fontSize: '2.5rem' }} 
     />
     {errors.lastName?.message && (
@@ -487,7 +487,7 @@ export default function Form() {
       placeholder='Email'
       {...register('email')}
       autoComplete='email'
-      className='block w-full border-b-2 border-blue-500 text-2xl py-1.5 placeholder:text-blue-100 text-blue-500 focus:border-blue-700 focus:outline-none'
+      className='block w-full border-b-2 border-blue-500 text-[1.1rem] md:text-[1.9rem] py-1.5 placeholder:text-blue-100 placeholder:text-[1.1rem] md:placeholder:text-[1.9rem]  text-blue-500 focus:border-blue-700 focus:outline-none'
       style={{ fontSize: '2.5rem' }}
     />
     {errors.email?.message && (
@@ -513,7 +513,7 @@ export default function Form() {
       type='text'
       {...register('phoneNumber')}
       autoComplete='tel'
-      className='block w-full border-b-2 border-blue-500 text-2xl py-1.5 placeholder:text-blue-100 text-blue-500 focus:border-blue-700 focus:outline-none'
+      className='block w-full border-b-2 border-blue-500 text-[1.1rem] md:text-[1.9rem] py-1.5 placeholder:text-blue-100  placeholder:text-[1.1rem] md:placeholder:text-[1.9rem] text-blue-500 focus:border-blue-700 focus:outline-none'
       style={{ fontSize: '2.5rem' }}
     />
     {errors.phoneNumber?.message && (
@@ -586,9 +586,9 @@ export default function Form() {
         <div
           key={index}
           onClick={() => handleSelect(option.label)}
-          className={`flex items-center justify-between w-120 p-4 border border-blue-300 rounded-lg cursor-pointer transition-colors duration-300 
+          className={`flex items-center justify-between w-120 p-4  text-[1.1rem] md:text-[1.9rem] border border-blue-300 rounded-lg cursor-pointer transition-colors duration-300 
           ${selectedOption === option.label ? 'bg-blue-200' : 'bg-blue-100'} hover:bg-blue-200`} // Hover and select states
-          style={{ borderRadius: '0.5rem', fontSize: '1.9rem' }}
+          style={{ borderRadius: '0.5rem' }}
         >
           <div className='flex items-center'>
             <div className='flex items-center justify-center w-24 h-24 bg-white text-blue-700 border border-blue-300 rounded-full mr-16'>
@@ -646,9 +646,9 @@ export default function Form() {
         <div
           key={index}
           onClick={() => handleSelect2(option.label)}
-          className={`flex items-center justify-between w-120 p-4 border border-blue-300 rounded-lg cursor-pointer transition-colors duration-300 
+          className={`flex items-center justify-between w-120 text-[1.1rem] md:text-[1.9rem] p-4 border border-blue-300 rounded-lg cursor-pointer transition-colors duration-300 
           ${selectedOption2 === option.label ? 'bg-blue-200' : 'bg-blue-100'} hover:bg-blue-200`} // Hover and select states
-          style={{ borderRadius: '0.5rem', fontSize: '1.9rem' }}
+          style={{ borderRadius: '0.5rem' }}
         >
           <div className='flex items-center'>
             <div className='flex items-center justify-center w-24 h-24 bg-white text-blue-700 border border-blue-300 rounded-full mr-16'>
@@ -708,7 +708,7 @@ export default function Form() {
       placeholder='Enter Your Answer Here...'
       {...register('frameworks')}
       autoComplete='react js'
-      className='block w-full border-b-2 border-blue-500  text-2xl text-blue-500 placeholder:text-blue-100 py-1.5 focus:border-blue-700 focus:outline-none'
+      className='block w-full border-b-2 border-blue-500  text-[1.1rem] md:text-[1.9rem] text-blue-500 placeholder:text-blue-100 py-1.5 placeholder:text-[1.1rem] md:placeholder:text-[1.9rem] focus:border-blue-700 focus:outline-none'
       style={{ fontSize: '2.5rem' }} 
     />
     {errors.frameworks?.message && (
@@ -761,7 +761,7 @@ export default function Form() {
       placeholder='Enter Your Answer Here...'
       {...register('experience')}
       autoComplete='react js'
-      className='block w-full border-b-2 border-blue-500  text-2xl text-blue-500 placeholder:text-blue-100 py-1.5 focus:border-blue-700 focus:outline-none'
+      className='block w-full border-b-2 border-blue-500  text-[1.1rem] md:text-[1.9rem] text-blue-500 placeholder:text-blue-100 py-1.5  placeholder:text-[1.1rem] md:placeholder:text-[1.9rem] focus:border-blue-700 focus:outline-none'
       style={{ fontSize: '2.5rem' }} 
     />
     {errors.experience?.message && (
@@ -814,9 +814,9 @@ export default function Form() {
         <div
           key={index}
           onClick={() => handleSelect3(option.label)}
-          className={`flex items-center justify-between w-120 p-4 border border-blue-300 rounded-lg cursor-pointer transition-colors duration-300 
+          className={`flex items-center justify-between w-120 text-[1.1rem] md:text-[1.9rem] p-4 border border-blue-300 rounded-lg cursor-pointer transition-colors duration-300 
           ${selectedOption3 === option.label ? 'bg-blue-200' : 'bg-blue-100'} hover:bg-blue-200`} // Hover and select states
-          style={{ borderRadius: '0.5rem', fontSize: '1.9rem' }}
+          style={{ borderRadius: '0.5rem' }}
         >
           <div className='flex items-center'>
             <div className='flex items-center justify-center w-24 h-24 bg-white text-blue-700 border border-blue-300 rounded-full mr-16'>
@@ -877,7 +877,7 @@ export default function Form() {
       placeholder='Enter Your Answer Here...'
       {...register('location')}
       autoComplete='react js'
-      className='block w-full border-b-2 border-blue-500  text-2xl text-blue-500 placeholder:text-blue-100 py-1.5 focus:border-blue-700 focus:outline-none'
+      className='block w-full border-b-2 border-blue-500  text-[1.1rem] md:text-[1.9rem] text-blue-500 placeholder:text-blue-100 py-1.5 placeholder:text-[1.1rem] md:placeholder:text-[1.9rem]  focus:border-blue-700 focus:outline-none'
       style={{ fontSize: '2.5rem' }} 
     />
     {errors.location?.message && (
@@ -910,7 +910,7 @@ export default function Form() {
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
             <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
-              Office Communication
+              Office
             </h2>
            {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
               Provide your personal details.
@@ -931,9 +931,9 @@ export default function Form() {
         <div
           key={index}
           onClick={() => handleSelect5(option.label)}
-          className={`flex items-center justify-between w-120 p-4 border border-blue-300 rounded-lg cursor-pointer transition-colors duration-300 
+          className={`flex items-center justify-between w-120 text-[1.1rem] md:text-[1.9rem] p-4 border border-blue-300 rounded-lg cursor-pointer transition-colors duration-300 
           ${selectedOption5 === option.label ? 'bg-blue-200' : 'bg-blue-100'} hover:bg-blue-200`} // Hover and select states
-          style={{ borderRadius: '0.5rem', fontSize: '1.9rem' }}
+          style={{ borderRadius: '0.5rem' }}
         >
           <div className='flex items-center'>
             <div className='flex items-center justify-center w-24 h-24 bg-white text-blue-700 border border-blue-300 rounded-full mr-16'>
@@ -990,7 +990,7 @@ export default function Form() {
       placeholder='https://'
       {...register('github')}
       autoComplete='react js'
-      className='block w-full border-b-2 border-blue-500  text-2xl text-blue-500 placeholder:text-blue-100 py-1.5 focus:border-blue-700 focus:outline-none'
+      className='block w-full border-b-2 border-blue-500 placeholder:text-[1.1rem] md:placeholder:text-[1.9rem]   text-[1.1rem] md:text-[1.9rem] text-blue-500 placeholder:text-blue-100 py-1.5 focus:border-blue-700 focus:outline-none'
       style={{ fontSize: '2.5rem' }} 
     />
     {errors.github?.message && (
@@ -1041,9 +1041,9 @@ export default function Form() {
         <div
           key={index}
           onClick={() => handleSelect6(option.label)}
-          className={`flex items-center justify-between w-120 p-4 border border-blue-300 rounded-lg cursor-pointer transition-colors duration-300 
+          className={`flex items-center justify-between w-120 text-[1.1rem] md:text-[1.9rem] p-4 border border-blue-300 rounded-lg cursor-pointer transition-colors duration-300 
           ${selectedOption6 === option.label ? 'bg-blue-200' : 'bg-blue-100'} hover:bg-blue-200`} // Hover and select states
-          style={{ borderRadius: '0.5rem', fontSize: '1.9rem' }}
+          style={{ borderRadius: '0.5rem' }}
         >
           <div className='flex items-center'>
             <div className='flex items-center justify-center w-24 h-24 bg-white text-blue-700 border border-blue-300 rounded-full mr-16'>
@@ -1100,9 +1100,9 @@ export default function Form() {
         <div
           key={index}
           onClick={() => handleSelect7(option.label)}
-          className={`flex items-center justify-between w-120 p-4 border border-blue-300 rounded-lg cursor-pointer transition-colors duration-300 
+          className={`flex items-center justify-between w-120 text-[1.1rem] md:text-[1.9rem] p-4 border border-blue-300 rounded-lg cursor-pointer transition-colors duration-300 
           ${selectedOption7 === option.label ? 'bg-blue-200' : 'bg-blue-100'} hover:bg-blue-200`} // Hover and select states
-          style={{ borderRadius: '0.5rem', fontSize: '1.9rem' }}
+          style={{ borderRadius: '0.5rem' }}
         >
           <div className='flex items-center'>
             <div className='flex items-center justify-center w-24 h-24 bg-white text-blue-700 border border-blue-300 rounded-full mr-16'>
@@ -1163,9 +1163,9 @@ export default function Form() {
         <div
           key={index}
           onClick={() => handleSelect8(option.label)}
-          className={`flex items-center justify-between w-120 p-4 border border-blue-300 rounded-lg cursor-pointer transition-colors duration-300 
+          className={`flex items-center justify-between w-120 p-4 text-[1.1rem] md:text-[1.9rem] border border-blue-300 rounded-lg cursor-pointer transition-colors duration-300 
           ${selectedOption8 === option.label ? 'bg-blue-200' : 'bg-blue-100'} hover:bg-blue-200`} // Hover and select states
-          style={{ borderRadius: '0.5rem', fontSize: '1.9rem' }}
+          style={{ borderRadius: '0.5rem' }}
         >
           <div className='flex items-center'>
             <div className='flex items-center justify-center w-24 h-24 bg-white text-blue-700 border border-blue-300 rounded-full mr-16'>
@@ -1227,7 +1227,7 @@ export default function Form() {
       placeholder='https://'
       {...register('figma')}
       autoComplete='figma links'
-      className='block w-full border-b-2 border-blue-500  text-2xl text-blue-500 placeholder:text-blue-100 py-1.5 focus:border-blue-700 focus:outline-none'
+      className='block w-full border-b-2 border-blue-500 placeholder:text-[1.1rem] md:placeholder:text-[1.9rem]  text-[1.1rem] md:text-[1.9rem] text-blue-500 placeholder:text-blue-100 py-1.5 focus:border-blue-700 focus:outline-none'
       style={{ fontSize: '2.5rem' }} 
     />
     {errors.figma?.message && (
@@ -1281,7 +1281,7 @@ export default function Form() {
       placeholder='Enter your answer here...'
       {...register('startDate')}
       autoComplete='react js'
-      className='block w-full border-b-2 border-blue-500  text-2xl text-blue-500 placeholder:text-blue-100 py-1.5 focus:border-blue-700 focus:outline-none'
+      className='block w-full border-b-2 border-blue-500 placeholder:text-[1.1rem] md:placeholder:text-[1.9rem]  text-[1.1rem] md:text-[1.9rem] text-blue-500 placeholder:text-blue-100 py-1.5 focus:border-blue-700 focus:outline-none'
       style={{ fontSize: '2.5rem' }} 
     />
     {errors.startDate?.message && (
@@ -1334,7 +1334,7 @@ export default function Form() {
       placeholder='Enter your answer here...'
       {...register('nativeLanguage')}
       autoComplete='react js'
-      className='block w-full border-b-2 border-blue-500  text-2xl text-blue-500 placeholder:text-blue-100 py-1.5 focus:border-blue-700 focus:outline-none'
+      className='block w-full border-b-2 border-blue-500 placeholder:text-[1.1rem] md:placeholder:text-[1.9rem]  text-[1.1rem] md:text-[1.9rem] text-blue-500 placeholder:text-blue-100 py-1.5 focus:border-blue-700 focus:outline-none'
       style={{ fontSize: '2.5rem' }} 
     />
     {errors.nativeLanguage?.message && (
@@ -1388,7 +1388,7 @@ export default function Form() {
           onClick={() => handleSelect9(option.label)}
           className={`flex items-center justify-between w-120 p-4 border border-blue-300 rounded-lg cursor-pointer transition-colors duration-300 
           ${selectedOption9 === option.label ? 'bg-blue-200' : 'bg-blue-100'} hover:bg-blue-200`} // Hover and select states
-          style={{ borderRadius: '0.5rem', fontSize: '1.9rem' }}
+          style={{ borderRadius: '0.5rem' }}
         >
           <div className='flex items-center'>
             <div className='flex items-center justify-center w-24 h-24 bg-white text-blue-700 border border-blue-300 rounded-full mr-16'>
@@ -1450,7 +1450,7 @@ export default function Form() {
       placeholder='Enter your answer here...'
       {...register('timeZone')}
       autoComplete='react js'
-      className='block w-full border-b-2 border-blue-500  text-2xl text-blue-500 placeholder:text-blue-100 py-1.5 focus:border-blue-700 focus:outline-none'
+      className='block w-full border-b-2 border-blue-500 placeholder:text-[1.1rem] md:placeholder:text-[1.9rem]  text-[1.1rem] md:text-[1.9rem] text-blue-500 placeholder:text-blue-100 py-1.5 focus:border-blue-700 focus:outline-none'
       style={{ fontSize: '2.5rem' }} 
     />
     {errors.timeZone?.message && (
@@ -1498,7 +1498,7 @@ export default function Form() {
       placeholder='Enter your answer here...'
       {...register('salary')}
       autoComplete='react js'
-      className='block w-full border-b-2 border-blue-500  text-2xl text-blue-500 placeholder:text-blue-100 py-1.5 focus:border-blue-700 focus:outline-none'
+      className='block w-full border-b-2 border-blue-500 placeholder:text-[1.1rem] md:placeholder:text-[1.9rem]  text-[1.1rem] md:text-[1.9rem] text-blue-500 placeholder:text-blue-100 py-1.5 focus:border-blue-700 focus:outline-none'
       style={{ fontSize: '2.5rem' }} 
     />
     {errors.salary?.message && (
@@ -1549,7 +1549,7 @@ export default function Form() {
           onClick={() => handleSelect10(option.label)}
           className={`flex items-center justify-between w-120 p-4 border border-blue-300 rounded-lg cursor-pointer transition-colors duration-300 
           ${selectedOption10 === option.label ? 'bg-blue-200' : 'bg-blue-100'} hover:bg-blue-200`} // Hover and select states
-          style={{ borderRadius: '0.5rem', fontSize: '1.9rem' }}
+          style={{ borderRadius: '0.5rem' }}
         >
           <div className='flex items-center'>
             <div className='flex items-center justify-center w-24 h-24 bg-white text-blue-700 border border-blue-300 rounded-full mr-16'>
@@ -1610,7 +1610,7 @@ export default function Form() {
       placeholder='Enter your answer here...'
       {...register('wireTransfer')}
       autoComplete='react js'
-      className='block w-full border-b-2 border-blue-500  text-2xl text-blue-500 placeholder:text-blue-100 py-1.5 focus:border-blue-700 focus:outline-none'
+      className='block w-full border-b-2 border-blue-500 placeholder:text-[1.1rem] md:placeholder:text-[1.9rem]  text-[1.1rem] md:text-[1.9rem] text-blue-500 placeholder:text-blue-100 py-1.5 focus:border-blue-700 focus:outline-none'
       style={{ fontSize: '2.5rem' }} 
     />
     {errors.wireTransfer?.message && (
