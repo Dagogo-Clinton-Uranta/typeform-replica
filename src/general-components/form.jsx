@@ -404,7 +404,7 @@ export default function Form() {
         </center>
 
       {/* Form */}
-      <form className='mt-12 py-3 w-[75%] mx-auto'  onSubmit={handleSubmit(processForm)}>
+      <form className='mt-0 py-3 w-[100%]   md:w-[75%] mx-auto'  onSubmit={handleSubmit(processForm)}>
         {currentStep === 0 && (
           <motion.div
           style={{scale:"0.8"}}
@@ -412,7 +412,7 @@ export default function Form() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
-            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+            <h2 className='md:text-2xl text-[2rem] font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
               Personal Information
             </h2>
            {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
@@ -564,7 +564,7 @@ export default function Form() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
-            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+            <h2 className='md:text-2xl text-[2rem] font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
               Expertise
             </h2>
            {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
@@ -576,7 +576,7 @@ export default function Form() {
 <div className='w-full mb-6'>
   <label
     htmlFor='frameworks'
-    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+    className=' md:text-sm text-[1rem] block font-medium leading-6 mb-[2.4rem] text-blue-500' 
   >
    What is your level of experience in software development?
   </label>
@@ -624,7 +624,7 @@ export default function Form() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
-            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+            <h2 className='md:text-2xl text-[2rem] font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
               Proficiency
             </h2>
            {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
@@ -636,7 +636,7 @@ export default function Form() {
 <div className='w-full mb-6'>
   <label
     htmlFor='frameworks'
-    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+    className='block md:text-sm text-[1rem] font-medium leading-6 mb-[2.4rem] text-blue-500' 
   >
    Which programming languages are you proficient in?
   </label>
@@ -685,7 +685,7 @@ export default function Form() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
-            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+            <h2 className='md:text-2xl text-[2rem] font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
               Frameworks
             </h2>
            {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
@@ -697,7 +697,7 @@ export default function Form() {
 <div className='w-full mb-6'>
   <label
     htmlFor='frameworks'
-    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+    className='block md:text-sm text-[1rem] font-medium leading-6 mb-[2.4rem] text-blue-500' 
   >
     Have you worked with any specific frameworks before?
   </label>
@@ -738,7 +738,7 @@ export default function Form() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
-            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+            <h2 className='md:text-2xl text-[2rem] font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
               Experience
             </h2>
            {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
@@ -750,7 +750,7 @@ export default function Form() {
 <div className='w-full mb-6'>
   <label
     htmlFor='experience'
-    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+    className='block md:text-sm text-[1rem] font-medium leading-6 mb-[2.4rem] text-blue-500' 
   >
     How Many Years of Web Development Experience do you have?
   </label>
@@ -792,7 +792,7 @@ export default function Form() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
-            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+            <h2 className='md:text-2xl text-[2rem] font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
               Version Control
             </h2>
            {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
@@ -804,7 +804,7 @@ export default function Form() {
 <div className='w-full mb-6'>
   <label
     htmlFor='frameworks'
-    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+    className='block md:text-sm text-[1rem] font-medium leading-6 mb-[2.4rem] text-blue-500' 
   >
    Are you familiar with version control systems like Git?
   </label>
@@ -854,7 +854,7 @@ export default function Form() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
-            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+            <h2 className='md:text-2xl text-[2rem] font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
               Location
             </h2>
            {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
@@ -866,7 +866,7 @@ export default function Form() {
 <div className='w-full mb-6'>
   <label
     htmlFor='location'
-    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+    className='block md:text-sm text-[1rem] font-medium leading-6 mb-[2.4rem] text-blue-500' 
   >
     Which Country are you currently located in?
   </label>
@@ -909,7 +909,7 @@ export default function Form() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
-            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+            <h2 className='md:text-2xl text-[2rem] font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
               Office
             </h2>
            {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
@@ -921,7 +921,7 @@ export default function Form() {
 <div className='w-full mb-6'>
   <label
     htmlFor='frameworks'
-    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+    className='block md:text-sm text-[1rem] font-medium leading-6 mb-[2.4rem] text-blue-500' 
   >
    What is your preferred method of communication for work-related matters?
   </label>
@@ -967,7 +967,7 @@ export default function Form() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
-            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+            <h2 className='md:text-2xl text-[2rem] font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
               Github Link
             </h2>
            {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
@@ -979,7 +979,7 @@ export default function Form() {
 <div className='w-full mb-6'>
   <label
     htmlFor='github'
-    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+    className='block md:text-sm text-[1rem] font-medium leading-6 mb-[2.4rem] text-blue-500' 
   >
    Can you provide a link to your GitHub profile or portfolio?
   </label>
@@ -1019,7 +1019,7 @@ export default function Form() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
-            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+            <h2 className='md:text-2xl text-[2rem] font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
               Team Work
             </h2>
            {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
@@ -1031,7 +1031,7 @@ export default function Form() {
 <div className='w-full mb-6'>
   <label
     htmlFor='frameworks'
-    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+    className='block md:text-sm text-[1rem] font-medium leading-6 mb-[2.4rem] text-blue-500' 
   >
    Are you comfortable working in a team environment?
   </label>
@@ -1078,7 +1078,7 @@ export default function Form() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
-            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+            <h2 className='md:text-2xl text-[2rem] font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
               Agile Methodology
             </h2>
            {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
@@ -1090,7 +1090,7 @@ export default function Form() {
 <div className='w-full mb-6'>
   <label
     htmlFor='frameworks'
-    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+    className='block md:text-sm text-[1rem] font-medium leading-6 mb-[2.4rem] text-blue-500' 
   >
   Do you have experience with Agile development methodologies?
   </label>
@@ -1141,7 +1141,7 @@ export default function Form() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
-            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+            <h2 className='md:text-2xl text-[2rem] font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
               Figma Design
             </h2>
            {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
@@ -1153,7 +1153,7 @@ export default function Form() {
 <div className='w-full mb-6'>
   <label
     htmlFor='frameworks'
-    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+    className='block md:text-sm text-[1rem] font-medium leading-6 mb-[2.4rem] text-blue-500' 
   >
   Are you a Figma designer?
   </label>
@@ -1204,7 +1204,7 @@ export default function Form() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
-            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+            <h2 className='md:text-2xl text-[2rem] font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
               Figma
             </h2>
            {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
@@ -1216,7 +1216,7 @@ export default function Form() {
 <div className='w-full mb-6'>
   <label
     htmlFor='figma'
-    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+    className='block md:text-sm text-[1rem] font-medium leading-6 mb-[2.4rem] text-blue-500' 
   >
    Please add your Figma links for us to view your work history:
   </label>
@@ -1258,7 +1258,7 @@ export default function Form() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
-            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+            <h2 className='md:text-2xl text-[2rem] font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
               Start Date
             </h2>
            {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
@@ -1270,7 +1270,7 @@ export default function Form() {
 <div className='w-full mb-6'>
   <label
     htmlFor='startDate'
-    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+    className='block md:text-sm text-[1rem] font-medium leading-6 mb-[2.4rem] text-blue-500' 
   >
    How soon are you able to start work?
   </label>
@@ -1311,7 +1311,7 @@ export default function Form() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
-            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+            <h2 className='md:text-2xl text-[2rem] font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
               Language
             </h2>
            {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
@@ -1323,7 +1323,7 @@ export default function Form() {
 <div className='w-full mb-6'>
   <label
     htmlFor='nativeLanguage'
-    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+    className='block md:text-sm text-[1rem] font-medium leading-6 mb-[2.4rem] text-blue-500' 
   >
   What is Your Native Language?
   </label>
@@ -1364,7 +1364,7 @@ export default function Form() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
-            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+            <h2 className='md:text-2xl text-[2rem] font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
               English
             </h2>
            {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
@@ -1376,7 +1376,7 @@ export default function Form() {
 <div className='w-full mb-6'>
   <label
     htmlFor='frameworks'
-    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+    className='block md:text-sm text-[1rem] font-medium leading-6 mb-[2.4rem] text-blue-500' 
   >
    Do you speak English?
   </label>
@@ -1427,7 +1427,7 @@ export default function Form() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
-            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+            <h2 className='md:text-2xl text-[2rem] font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
               Time Zone
             </h2>
            {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
@@ -1439,7 +1439,7 @@ export default function Form() {
 <div className='w-full mb-6'>
   <label
     htmlFor='timeZone'
-    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+    className='block md:text-sm text-[1rem] font-medium leading-6 mb-[2.4rem] text-blue-500' 
   >
    What is your timezone?
   </label>
@@ -1475,7 +1475,7 @@ export default function Form() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
-            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+            <h2 className='md:text-2xl text-[2rem] font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
               Salary Expectations
             </h2>
            {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
@@ -1487,7 +1487,7 @@ export default function Form() {
 <div className='w-full mb-6'>
   <label
     htmlFor='salary'
-    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+    className='block md:text-sm text-[1rem] font-medium leading-6 mb-[2.4rem] text-blue-500' 
   >
    What are your Salary Expectations?
   </label>
@@ -1524,7 +1524,7 @@ export default function Form() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
-            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+            <h2 className='md:text-2xl text-[2rem] font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
               Position
             </h2>
            {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
@@ -1536,7 +1536,7 @@ export default function Form() {
 <div className='w-full mb-6'>
   <label
     htmlFor='frameworks'
-    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+    className='block md:text-sm text-[1rem] font-medium leading-6 mb-[2.4rem] text-blue-500' 
   >
    Which of the following are you applying for?
 
@@ -1587,7 +1587,7 @@ export default function Form() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
-            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+            <h2 className='md:text-2xl text-[2rem] font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
               Wire Transfer
             </h2>
            {/* <p className='mt-1 text-sm leading-6 text-gray-600'>
@@ -1599,7 +1599,7 @@ export default function Form() {
 <div className='w-full mb-6'>
   <label
     htmlFor='salary'
-    className='block text-sm font-medium leading-6 mb-[2.4rem] text-blue-500' 
+    className='block md:text-sm text-[1rem] font-medium leading-6 mb-[2.4rem] text-blue-500' 
   >
   Can your bank receive wire transfer from the USA?
   </label>
@@ -1647,7 +1647,7 @@ export default function Form() {
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
 
-            <h2 className='text-2xl font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
+            <h2 className='md:text-2xl text-[2rem] font-semibold leading-7 text-gray-900 mb-[1.2rem]'>
               Form Completed&nbsp;{!isExploding && ", Submit or Go back to Review"}
             </h2>
 
